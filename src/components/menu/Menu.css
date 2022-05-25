@@ -23,7 +23,7 @@
     width: 100%;
     flex-direction: column;
     align-items: center;
-    justify-content: start;
+    justify-content: flex-start;
 }
 #options a {
     text-decoration: none;
@@ -38,6 +38,16 @@
     padding: 0;
     margin: 0;
 }
+
+.orange-button {
+    background-color: #F26522;
+    color: white;
+    border-radius: 17px;
+    padding: 15px;
+    font-size: 35px;
+  }
+
+
   /* Smaller Screen */
 @media only screen and (max-width: 600px) {
     #menu-background {
