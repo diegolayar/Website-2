@@ -1,0 +1,150 @@
+
+/* A Jugar Ilustration*/
+#a-jugar-container {
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: end;
+    width: 100%;
+    height: auto;
+}
+#a-jugar {
+    width: 90%;
+    height: auto;
+}
+#a-jugar-mobile {
+    width: 100%;
+    height: auto;
+    display: none;
+}
+
+/*Main Goal*/
+#main-goal {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+}
+#main-goal-mobile {
+    display: none;
+    width: 65%;
+    align-self: flex-start;
+    height: auto;
+    margin: 40px;
+}
+#main-goal-description {
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-top: 50px;
+    font-size: 30px;
+    text-align: center;
+    line-height: 50px;
+}
+
+/*Our Team*/
+#our-team-parent {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#founder {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: flex;
+}
+#founder-mobile {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    display: none;
+}
+#tutors-title {
+    margin-bottom: 50px;
+}
+.tutors {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    align-self: center;
+    justify-content: space-around;
+    width: 90%;
+}
+.tutor {
+    height: auto;
+    width: auto;
+    display: flex;
+    margin-bottom: 75px;
+}
+.tutor-mobile {
+    height: auto;
+    width: auto;
+    display: none;
+    margin-bottom: 75px;
+}
+
+/*Footer Specific to About*/
+#footer-parent {
+    width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+    /* A Jugar Ilustration*/
+    #a-jugar-container {
+        width: 100%;
+        height: auto;
+        align-items: center;
+    }
+    #a-jugar {
+        width: 90%;
+        height: auto;
+        display: none;
+    }
+    #a-jugar-mobile {
+        display: flex;
+    }
+
+    /*Main Goal*/
+    #main-goal {
+        display: none;
+    }
+    #main-goal-mobile {
+        display: flex;
+    }
+    #main-goal-description {
+        width: 80%;
+        align-self: flex-start;
+        text-align: left;
+        height: auto;
+        margin: 0 0 0 40px;
+        line-height: 35px;
+        font-size: 23px;
+    }
+
+    /*Our Team*/
+    #founder {
+        display: none;
+    }
+    #founder-mobile {
+        display: flex;
+    }
+    .tutors {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 90%;
+    }
+    .tutor {
+        display: none;
+    }
+    .tutor-mobile {
+        display: flex;
+    }
+
+    /*Footer Specific to About*/
+    #footer-parent {
+        width: 80%;
+    } 
+}
