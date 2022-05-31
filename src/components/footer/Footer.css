@@ -72,9 +72,13 @@
 @media only screen and (max-width: 600px) {
     #footer {
         flex-direction: column;
-        width: 100%;
+        width: 95%;
     }
     #contact-info {
         margin: 20px 0 40px 0;
     }
+    #contact-info-parent {
+        margin-top: 50px;
+    }
+
   }

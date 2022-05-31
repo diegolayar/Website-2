@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import '../../App.css';
 import './ProyectoPlay.css';
 import Footer from '../footer/Footer.js';
+import '../program/Program.css';
+
 // import '../press/Press.css'
 import { ReactComponent as ProyectoPlayLogo } from '../../assets/navigation-assets/ProyectoPlayLogo.svg';
 
@@ -36,13 +38,14 @@ const ProyectoPlay = () => {
             <div id="content">
                 <ProyectoPlayLogo id="proyecto-play-logo"/>
                 <div className='horizontal-stack'>
-                    <div className='orange-title'>WHAT IS IT</div>
+                    <div id="what-it-is-title" className='orange-title'>WHAT IS IT</div>
                 </div>
                 <div className='horizontal-stack'>
                     <div id="what-is-it-text">
-                        This project focuses on hosting large scale
-                        community events for parents and children to
-                        get together and play traditional games.
+                        Proyecto Play mainly focuses on hosting large 
+                        scale community events. Our goal is for parents 
+                        and children to get together and create a unique
+                        experience playing curated traditional games.
                     </div>
                     <div className='lead-stack'>
                         <div id='class-type-parent'>
@@ -76,7 +79,7 @@ const ProyectoPlay = () => {
                                     <h4 className="press-date">
                                         <b>COMING SOON</b>
                                     </h4>
-                                    <h4 className="press-info">
+                                    <h4 className="press-info-extra">
                                         KUWAIT NATIONAL LIBRARY
                                     </h4>
                                 </div>
@@ -95,14 +98,14 @@ const ProyectoPlay = () => {
                                     <h4 className="press-info">
                                         DAI KUWAIT, KUWAIT CITY
                                     </h4>
-                                    <h4 className="press-info">
+                                    <h4 className="press-info-extra">
                                         FAMILY DAY
                                     </h4>
                                 </div>
                             </div>
                             <button onClick={() => {setSeePhotosFamilyDay(!seePhotosFamilyDay)}} className="see-photos-button">
                                 {seePhotosFamilyDay ? "x close photos" : "> see photos"}
-                            </button>
+                             </button>
                            
                         </div>
                         {
@@ -124,13 +127,13 @@ const ProyectoPlay = () => {
                                     <h4 className="press-info">
                                         AL HAMRA, KUWAIT CITY
                                     </h4>
-                                    <h4 className="press-info">
+                                    <h4 className="press-info-extra">
                                         KUWAIT COUNSELING CENTER
                                     </h4>
                                 </div>
                             </div>
                             <button onClick={() => {setSeePhotosCounselingCenter(!seePhotosCounselingCenter)}} className="see-photos-button">
-                                {seePhotosFamilyDay ? "x close photos" : "> see photos"}
+                                {seePhotosCounselingCenter ? "x close photos" : "> see photos"}
                             </button>
                         </div>
                             {
@@ -141,17 +144,8 @@ const ProyectoPlay = () => {
                                         <CounselingCenter3 className='collection-image'/>
                                     </div>
                             }
-
-
-
-
-
-
-
-
                     </div>
                 </div>
-               
                 <Footer/>   
             </div>
         </div>

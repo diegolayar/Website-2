@@ -1,14 +1,7 @@
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .button:hover, button:hover, input:hover {
   cursor: pointer;
 }
+
 html {
   scroll-behavior: smooth;
 }
@@ -28,6 +21,11 @@ html {
 @font-face {
   font-family: 'Rubik';
   src: url('./assets/fonts/Rubik/static/Rubik-Regular.ttf')
+}
+
+@font-face {
+  font-family: 'Rubik-Light';
+  src: url('./assets/fonts/Rubik/static/Rubik-Light.ttf')
 }
 
 /* End of Fonts */

@@ -1,0 +1,135 @@
+#proyecto-play-logo {
+    width: 40%;
+    height: auto;
+    margin: 100px 0 100px 0;
+}
+
+.horizontal-stack {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#what-it-is-title {
+    display: flex;
+}
+
+#what-is-it-text {
+    background-color: #F6FF89;
+    border-radius: 52px;
+    text-align: left;
+    font-family: 'Rubik';
+    line-height: 40px;
+    font-size: 25px;
+    padding: 40px;
+}
+
+#paragraph {
+    line-height: 30px;
+    font-family: 'Rubik';
+}
+
+.lead-stack {
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+#events-container {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.press-article {
+    display: flex;
+    flex-direction: row;
+    border-top-style: solid;
+    border-top-width: thin;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.press-core {
+    display: flex;
+    flex-direction: row;
+}
+
+.press-info-container {
+    margin-left: 30px;
+}
+
+.see-photos-button {
+    background-color: transparent;
+    border-style: none;
+    color: black;
+    font-size: 18px;
+}
+
+.photos {
+    padding: 0 0 50px 50px;
+}
+
+.collection-image {
+    margin-right: 20px;
+}
+
+.press-info {
+    font-weight: initial;
+}
+
+.press-info-extra {
+    font-family: 'Rubik-Light';
+}
+
+@media only screen and (max-width: 800px) {
+    #proyecto-play-logo {
+        width: 90%;
+        height: auto;
+        margin: 70px 0 100px 0;
+    }
+    #paragraph {
+        margin-top: 40px;
+    }
+    .horizontal-stack {
+        width: 90%;
+        flex-direction: column;
+    }
+    #what-it-is-title {
+        display: none;
+    }
+    #what-is-it-text {
+        padding: 0;
+        background-color: transparent;
+    } 
+    .lead-stack {
+        margin: 0;
+        flex-direction: column-reverse;
+    }
+    .press-core {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .press-article {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 50px 0 50px 0;
+    }
+    .press-info-container {
+        margin: 40px 0 40px 0;
+    }
+    .photos {
+        padding: 0;
+    }
+    .collection-image {
+        margin-bottom: 20px;
+    }
+    .see-photos-button {
+        margin-left: 0;
+    }
+    #events-container {
+        margin-top: 50px;
+        width: 90%;
+    }
+}
