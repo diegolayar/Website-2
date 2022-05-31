@@ -6,6 +6,7 @@ import Program from '../components/program/Program.js'
 import ProyectoPlay from '../components/proyecto-play/ProyectoPlay.js'
 import Resources from '../components/resources/Resources.js';
 import About from '../components/about/About.js';
+import Press from '../components/press/Press.js';
 
 const Routes = () => {
     return (
@@ -16,6 +17,7 @@ const Routes = () => {
             <Route exact path="/program" render={() => <Program />} />
             <Route exact path="/proyecto-play" render={() => <ProyectoPlay />} />
             <Route exact path="/resources" render={() => <Resources />} />
+            <Route exact path="/press" render={() => <Press />} />
         </Switch>
     );
 
