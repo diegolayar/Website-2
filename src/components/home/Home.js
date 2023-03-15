@@ -14,14 +14,14 @@ import $ from 'jquery';
 
 const Home = () => {
 
-    useEffect(() => {
-        $('div.portion').css('height', $('div.portion').height());
-        $('div.portion').css('width', $('div.portion').width());
-    });
+    // useEffect(() => {
+    //     $('div.portion').css('height', $('div.portion').height());
+    //     $('div.portion').css('width', $('div.portion').width());
+    // });
 
     return (
         <div>
-            <div className='cream portion'>
+            <div style={{height: `${window.screen.height}px`}} className='cream portion'>
                 <div id="slogan">
                     <p className='huge-title'><span className='teal-text'>PLAY</span> IS NOT A BREAK FROM LEARNING.</p>
                     <p className='huge-title'>IT'S HOW WE <span className='teal-text'>LEARN.</span></p>
@@ -40,7 +40,7 @@ const Home = () => {
                 </div>
                 <Illustration id="illustration"/>
             </div>
-            <div id="brief" className='teal'>
+            <div id="brief" style={{height: `${window.screen.height}px`}} className='teal'>
                 <div className='info-portion'>
                     <div id="top-section" className='info-section'>
                         <PrivateClasses className='boxy-image'/>
@@ -67,7 +67,7 @@ const Home = () => {
                     </div>
                 </div>
             </div>
-            <div id='reviews' className='cream'>
+            <div id='reviews' style={{height: `${window.screen.height}px`}} className='cream'>
                 <div id="container">
                     <Rectangle id="rectangle"/>
                     <p id="paragraph-one">
@@ -76,7 +76,7 @@ const Home = () => {
                         The children look forward to the class always, due to her commitment, joy and
                         passion in learning the language and in that they have been able to progress
                         very well.”
-                        <h3>- Mona Seraj Saleh</h3>
+                        <h4>- Mona Seraj Saleh</h4>
                     </p>
                     <Ovalo id="ovalo"/>
                     <p id="paragraph-two">
@@ -86,7 +86,7 @@ const Home = () => {
                         ago, we were in Switzerland and my daughter talked to a waiter in English. He  
                         didn’t understand, so she switched to Spanish and he understood! I’m so proud
                         of her and so happy that we have chosen Ms. Ileana.”
-                        <h3>- Aysha</h3>
+                        <h4>- Aysha</h4>
                     </p>
                     <Rayon id="rayon"/>
                     <p id="paragraph-three">
@@ -97,14 +97,14 @@ const Home = () => {
                         needs and development, has ensured my steady progress and nurtured my love for
                         the Spanish language. I am pleased to say that now my son is also taking lessons
                         with Ileana.”
-                        <h3>- Madeleine Gurney</h3>
+                        <h4>- Madeleine Gurney</h4>
                     </p>
                 </div>
             </div>
             <div className="bright-yellow portion">
                 <div id="follow-us-container">
                     <h2>Follow Us</h2>
-                    <h1>@THERASPANISHPLAY</h1>
+                    <h2>@THERASPANISHPLAY</h2>
                 </div>
             </div>
             <div className='unconstrained-portion bright-yellow'>
